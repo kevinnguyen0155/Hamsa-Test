@@ -1,0 +1,68 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Gotham-htf;
+  src: url(fonts/gothamhtf-book-webfont.ttf);
+}
+
+@font-face {
+  font-family: Gotham-htf;
+  src: url(fonts/gothamhtf-bold-webfont.ttf);
+  font-weight: bold;
+}
+
+body {
+  font-family: Gotham-htf;
+  font-size: 16px;
+  color: #000;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+header {
+  position: relative;
+}
+
+header img {
+  width: 100%;
+}
+
+header h1 {
+  font-size: 4rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header nav {
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 19%;
+  left: 4%;
+}
+
+header nav li {
+  margin-bottom: 2em;
+}
+
+header nav li a {
+  color: #000;
+}
