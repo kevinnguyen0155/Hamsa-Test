@@ -16,6 +16,7 @@
   font-weight: bold;
 }
 
+html,
 body {
   font-family: Gotham-htf;
   font-size: 16px;
@@ -210,7 +211,7 @@ header nav li:hover a {
 }
 
 .footer__bottom ul {
-  width: 68%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -233,4 +234,37 @@ header nav li:hover a {
   content: "";
   display: block;
   clear: both;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1360px) {
+  .footer__bottom ul {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 12px;
+  }
+
+  .footer__bottom ul {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+
+  .footer__bottom ul {
+    width: 95%;
+  }
 }
