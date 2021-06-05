@@ -38,6 +38,7 @@ header {
 
 header img {
   width: 100%;
+  display: block;
 }
 
 header h1 {
@@ -65,4 +66,58 @@ header nav li {
 
 header nav li a {
   color: #000;
+}
+
+header nav li:hover a {
+  color: #a67765;
+}
+
+/* MIDDLE */
+
+.middle__upper .left,
+.middle__upper .right {
+  width: 50%;
+  float: left;
+  position: relative;
+}
+
+.middle__upper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.middle__upper img {
+  width: 100%;
+}
+
+.middle__upper h1,
+.middle__upper h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.middle__upper .left h1 {
+  font-size: 3.1rem;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}
+
+.middle__upper .right .text {
+  position: absolute;
+  top: 44%;
+  left: 34%;
+  text-align: center;
+}
+
+.middle__upper .right .text h1 {
+  font-size: 3.6rem;
+  line-height: 3.2rem;
+}
+
+.middle__upper .right .text h2 {
+  font-size: 1.8rem;
 }
