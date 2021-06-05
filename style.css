@@ -345,7 +345,7 @@ header nav li:hover a {
   }
 
   .footer__bottom ul {
-    width: 92%;
+    width: 95%;
   }
 
   .footer__bottom ul li {
@@ -358,6 +358,14 @@ header nav li:hover a {
   header nav {
     font-size: 1.5rem;
     top: 15%;
+  }
+
+  .middle__lower p {
+    font-size: 1.5rem;
+  }
+
+  .footer__left input {
+    font-size: 1.3rem;
   }
 }
 
@@ -435,6 +443,10 @@ header nav li:hover a {
     height: 5rem;
     width: 100%;
     overflow: hidden;
+  }
+
+  .footer__left input {
+    font-size: 2rem;
   }
 
   .footer__left button {
