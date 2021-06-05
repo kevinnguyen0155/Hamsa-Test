@@ -19,8 +19,11 @@
 html,
 body {
   font-family: Gotham-htf;
-  font-size: 16px;
   color: #000;
+}
+
+html {
+  font-size: 1.2vw;
 }
 
 ul,
@@ -157,23 +160,33 @@ header nav li:hover a {
   font-size: 1rem;
 }
 
-.footer__left input {
-  width: 33.6vw;
-  font-size: 1rem;
-  padding: 0.6rem;
+.footer__left form {
   margin-top: 0.6rem;
+  height: 2.6rem;
+  width: 37.5vw;
+}
+
+.footer__left input {
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  height: 100%;
+  width: 91%;
   border-radius: 0;
   border: 1px solid #000;
   outline: none;
+  float: left;
 }
 
 .footer__left button {
+  font-size: 1rem;
   color: #fff;
   font-weight: 800;
   background: #000;
-  padding: 0.6rem;
+  padding: 0 0.41rem;
   border: 1px solid #000;
   cursor: pointer;
+  height: 100%;
+  float: right;
 }
 
 .footer__left .icons {
@@ -237,7 +250,7 @@ header nav li:hover a {
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 1360px) {
+/* @media screen and (max-width: 1360px) {
   .footer__bottom ul {
     width: 80%;
   }
@@ -267,4 +280,4 @@ header nav li:hover a {
   .footer__bottom ul {
     width: 95%;
   }
-}
+} */
