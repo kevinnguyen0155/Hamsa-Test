@@ -55,6 +55,58 @@ header h1 {
   transform: translateX(-50%) translateY(-50%);
 }
 
+header .nav-collapse .nav-toggle {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 2;
+  display: none;
+}
+
+header .nav-collapse .nav-toggle i {
+  font-size: 3rem;
+  color: #a67765;
+  padding: 1rem;
+}
+
+header .nav-collapse .nav-toggle:hover {
+  box-shadow: 0px 0px 5px 2px #a67765;
+}
+
+header .nav-collapse ul {
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  z-index: 1;
+  transform: translateY(-100%);
+  transition: 0.5s;
+}
+
+header .nav-collapse ul.show {
+  transform: translateY(0);
+}
+
+header .nav-collapse li {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+}
+
+header .nav-collapse li a {
+  color: #000;
+  transition: 0.5s;
+}
+
+header .nav-collapse li:hover a {
+  color: #a67765;
+}
+
 header nav {
   font-size: 0.9rem;
   letter-spacing: 0.2rem;
@@ -250,34 +302,197 @@ header nav li:hover a {
 }
 
 /* RESPONSIVE */
-/* @media screen and (max-width: 1360px) {
-  .footer__bottom ul {
-    width: 80%;
-  }
-}
-
 @media screen and (max-width: 1200px) {
-  html {
-    font-size: 14px;
+  header nav {
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 992px) {
-  html {
-    font-size: 12px;
+  /* HEADER */
+  header nav {
+    font-size: 1.3rem;
+    top: 15%;
+  }
+
+  header nav li {
+    margin-bottom: 1.5em;
+  }
+
+  /* FOOTER */
+  .footer__left h1 {
+    font-size: 1.5rem;
+  }
+
+  .footer__left form {
+    margin-top: 0.6rem;
+    height: 3.1rem;
+    width: 41.8vw;
+  }
+
+  .footer__left .icons i {
+    font-size: 2.6rem;
+  }
+
+  .footer__right h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 0.5rem 0;
+  }
+
+  .footer__right a {
+    font-size: 1.2rem;
   }
 
   .footer__bottom ul {
-    width: 95%;
+    width: 92%;
+  }
+
+  .footer__bottom ul li {
+    font-size: 1rem;
+    padding: 0 0.5em;
   }
 }
 
 @media screen and (max-width: 768px) {
-  html {
-    font-size: 10px;
+  header nav {
+    font-size: 1.5rem;
+    top: 15%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* HEADER */
+  header nav {
+    display: none;
+  }
+
+  header .nav-collapse .nav-toggle {
+    display: block;
+  }
+
+  .middle__upper .left,
+  .middle__upper .right {
+    width: 100%;
+    position: relative;
+  }
+
+  /* MIDDLE */
+  .middle__upper .left h1 {
+    font-size: 4.3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .middle__upper .right .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+  }
+
+  .middle__upper .right .text h1 {
+    font-size: 5.7rem;
+    line-height: 5.5rem;
+  }
+
+  .middle__upper .right .text h2 {
+    font-size: 2.9rem;
+  }
+
+  .middle__lower p {
+    font-size: 1.7rem;
+  }
+
+  .middle__lower .gallery img {
+    float: left;
+    width: 50%;
+  }
+
+  /* FOOTER */
+  .footer__left,
+  .footer__right {
+    float: none;
+    width: 90%;
+    margin: 5rem auto;
+  }
+
+  .footer__left h1 {
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .footer__left form {
+    margin-top: 0.6rem;
+    height: 5rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .footer__left button {
+    font-size: 2rem;
+    padding: 0px 0.71rem;
+  }
+
+  .footer__left .icons {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+
+  .footer__left .icons i {
+    font-size: 5rem;
+    padding: 1.5rem;
+    cursor: pointer;
+  }
+
+  .footer__right h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0.8rem 0;
+  }
+
+  .footer__right a {
+    line-height: 1.8em;
+    font-size: 2rem;
+  }
+
+  .footer__right ul {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .footer__right ul li:nth-child(odd) {
+    float: left;
+    width: 60%;
+  }
+
+  .footer__right ul li:nth-child(even) {
+    float: left;
+    width: 40%;
+  }
+
+  .footer__right a {
+    line-height: 2em;
+    font-size: 2.2rem;
+  }
+
+  .footer__bottom {
+    margin: 8rem 0 1rem;
   }
 
   .footer__bottom ul {
-    width: 95%;
+    width: 90%;
   }
-} */
+
+  .footer__bottom ul li {
+    font-size: 2rem;
+    float: none;
+    border-left: none;
+    padding: 0px 1.5em;
+    line-height: 2.8rem;
+  }
+}

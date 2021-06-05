@@ -17,8 +17,29 @@
   <body>
     <!-- HEADER -->
     <header>
+      <!-- navbar for screen smaller than 576px -->
+      <div class="nav-collapse">
+        <div class="nav-toggle" id="nav-toggle" onclick="toggleNavCollapse()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul id="navbar-collapse">
+          <li><a href="#">new arrivals</a></li>
+          <li><a href="#">boots</a></li>
+          <li><a href="#">flats</a></li>
+          <li><a href="#">heels</a></li>
+          <li><a href="#">sandals</a></li>
+          <li><a href="#">sneakers</a></li>
+          <li><a href="#">sale</a></li>
+          <li><a href="#">view all</a></li>
+          <li><a href="#">campaign</a></li>
+          <li><a href="#">story</a></li>
+        </ul>
+      </div>
+
       <img src="images/top.jpg" alt="top" />
       <h1>happypoints</h1>
+
+      <!-- navbar for screen greater than 576px -->
       <nav>
         <ul>
           <li><a href="#">new arrivals</a></li>
@@ -107,5 +128,12 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function toggleNavCollapse() {
+        var navCollapse = document.getElementById("navbar-collapse")
+        navCollapse.classList.toggle("show")
+      }
+    </script>
   </body>
 </html>
