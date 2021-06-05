@@ -73,7 +73,7 @@ header nav li:hover a {
 }
 
 /* MIDDLE */
-
+/* MIDDLE__UPPER */
 .middle__upper .left,
 .middle__upper .right {
   width: 50%;
@@ -120,4 +120,23 @@ header nav li:hover a {
 
 .middle__upper .right .text h2 {
   font-size: 1.8rem;
+}
+
+/* MIDDLE__LOWER */
+.middle__lower p {
+  font-size: 1.2rem;
+  padding: 1.3rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.middle__lower .gallery img {
+  float: left;
+  width: 20%;
+}
+
+.middle__lower .gallery::after {
+  content: "";
+  display: block;
+  clear: both;
 }
