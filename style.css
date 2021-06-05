@@ -371,13 +371,18 @@ header nav li:hover a {
     display: block;
   }
 
+  header .nav-collapse li {
+    font-size: 3rem;
+    margin: 2rem 0;
+  }
+
+  /* MIDDLE */
   .middle__upper .left,
   .middle__upper .right {
     width: 100%;
     position: relative;
   }
 
-  /* MIDDLE */
   .middle__upper .left h1 {
     font-size: 4.3rem;
     position: absolute;
@@ -438,7 +443,7 @@ header nav li:hover a {
   }
 
   .footer__left .icons {
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
     margin-top: 1rem;
   }
